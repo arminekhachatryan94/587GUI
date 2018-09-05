@@ -15,19 +15,24 @@ public class BuildFrame extends JFrame {
     private JButton button;
     private JLabel label;
 
-    private int dummy;
+    private static final double INTEREST_RATE = 5;
+    private static final double INITIAL_BALANCE = 1000;
+
+    private double balance;
 
     public BuildFrame() {
+        balance = INITIAL_BALANCE;
         createFrame();
         addListeners();
         setSize(FRAME_WIDTH, FRAME_HEIGHT);
-        dummy = 0;
     }
 
     private class ClickListener implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e){
-            label .setText(String.valueOf(++dummy));
+            double interest = balance * INTEREST_RATE/100;
+            balance += interest;
+            label.setText("Balance: " + balance);
         }
     }
 
