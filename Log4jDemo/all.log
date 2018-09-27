@@ -1,0 +1,5 @@
+2018-09-25 20:49:19.318 [main] DEBUG Student - This is debug message
+2018-09-25 20:49:19.322 [main] INFO  Student - This is info message
+2018-09-25 20:49:19.322 [main] WARN  Student - This is warn message
+2018-09-25 20:49:19.322 [main] FATAL Student - This is fatal message
+2018-09-25 20:49:19.322 [main] ERROR Student - This is error message
